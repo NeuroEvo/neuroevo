@@ -1,7 +1,6 @@
 # About
 #### NeuroEvo (short for "neuroevolution") is a platform for automated design and training of neural networks using evolutionary and particle swarm algorithms. The neuroevo Python package implements the algorithms used in the web application ([neuroevo.io](https://neuroevo.io)).
 #### Developed by Philip Schroeder (pschroe9@jhu.edu)
-#### [Package Github](https://github.com/NeuroEvo/neuroevo)
 
 # Example
 ```
