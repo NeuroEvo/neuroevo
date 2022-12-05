@@ -1,6 +1,6 @@
 # About
 #### NeuroEvo is a platform for automated design and training of neural networks using evolutionary and particle swarm algorithms. The neuroevo Python package implements the algorithms used in the web application ([neuroevo.io](https://neuroevo.io)).
-#### Developed by Philip Schroeder (pschroe9@jhu.edu)
+#### Developed by Philip Schroeder (pschroe9@jhu.edu, pschroed@broadinstitute.org)
 
 # Example
 ```
@@ -34,3 +34,22 @@ print("Predicted class: " + str(nn1.predict_class(example_input)))
 print("Activation function output for each class: " + str(nn1.get_last_class_act_funct_output()))
 print("Input: " + str(nn1.get_last_input()))
 ```
+
+
+## Basic options
+
+### Input 
+
+
+| Option | Argument | Type | Description|
+|---|-------|------|----|
+| `first_feature_column_number, last_feature_column_number`  | INT | Required | column number of first and last feature in training data |
+| `class_col_number`  | INT | Required | column number of class label in training data |
+| `has_header`  | BOOL | Required | indicates whether first row of training data includes column names/labels  |
+| `train_method`  | STRING | Required | 'PSO' for particle swarm optimization; 'DE' for differential evolution; 'GA' for genetic algorithm  |
+| `imputation_method`  | STRING | Optional | 'mean' for mean imputation (default); 'remove' to have observations with missing values removed |
+| `transformation_method`  | STRING | Optional | 'None' for no transformation (default); 'norm' for normalization using min and max; 'standardize' for standardization using mean and sd; 'log' for log transformation |
+
+
+
+
